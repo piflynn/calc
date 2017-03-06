@@ -204,6 +204,10 @@ body {
 	height: 32px; 
 }
 
+#window {
+	font-size: 50%;
+}
+
 #second {
 	background: #5CE;
 }
