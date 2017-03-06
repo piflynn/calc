@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
         <link href="css/style.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -32,10 +32,373 @@
         <div class="wrapper">
           <div id="calc">
               <div id="screen-border">
-                <div id="ti">Texas Instruments TI-82</div>
+                <div id="brand">
+                  <b>T<span id="ti">EXAS</span> I<span id="ti">NSTRUMENTS</span> <span id="model">TI-82</span><b>
+                </div>
                 <div id="screen">
                   <p>10 + 5</p>
                 </div>
+              </div>
+                <div id="angle"></div>
+                <div class="row" id="graph-buttons">
+                  <div class="column column-1">
+                    <div class="button-bg button-graph-bg">
+                      <div class="button-fg button-graph button-txt">
+                        Y=
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg button-graph-bg">
+                      <div class="button-fg button-graph button-txt">
+                        WINDOW
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg button-graph-bg">
+                      <div class="button-fg button-graph button-txt">
+                        ZOOM
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg button-graph-bg">
+                      <div class="button-fg button-graph button-txt">
+                        TRACE
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg button-graph-bg">
+                      <div class="button-fg button-graph button-txt">
+                        GRAPH
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div id="buttons">
+              <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt" id="second">
+                        2nd
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        MODE
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        DEL
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    
+                  </div>
+                  <div class="column column-1">
+                    
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt num">
+                        ALPHA
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        X,T,&thetasym;
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        STAT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    
+                  </div>
+                  <div class="column column-1">
+                    
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        MATH
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        MATRX
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        PRGM
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        VARS
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        CLEAR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        <em>x</em><sup>-1</sup>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        SIN
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        COS
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        TAN
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg">
+                        &Hat;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        <em>x</em><sup>2</sup>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg">
+                        ,
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg">
+                        (
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg">
+                        )
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg operator">
+                        &divide;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        LOG
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        7
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        8
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        9
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg operator">
+                        x
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        LN
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        4
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        5
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        6
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg operator">
+                        -
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg button-txt">
+                        STO>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        1
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        2
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg num">
+                        3
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-1">
+                    <div class="button-bg">
+                      <div class="button-fg operator">
+                        +
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column column-1">
+                      <div class="button-bg">
+                        <div class="button-fg button-txt" id="on">
+                          ON
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column column-1">
+                      <div class="button-bg">
+                        <div class="button-fg num">
+                          0
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column column-1">
+                      <div class="button-bg">
+                        <div class="button-fg num">
+                          .
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column column-1">
+                      <div class="button-bg">
+                        <div class="button-fg button-txt num">
+                          (&mdash;)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column column-1">
+                      <div class="button-bg" id="enter-bg">
+                        <div class="button-fg button-txt operator" id="enter">
+                          ENTER
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
               </div>
           </div>
         </div>
