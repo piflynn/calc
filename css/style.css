@@ -94,6 +94,20 @@ body {
 	color: #fff;
 	border-radius: 2px;
 	box-shadow: inset 0 0 2px #000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button-fg:hover {
+	cursor: pointer;
+}
+
+.button-fg:active {
+	box-shadow: inset 0 0 4px #000000;
 }
 
 .button-txt {
