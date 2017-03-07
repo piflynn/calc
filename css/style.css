@@ -66,7 +66,7 @@ body {
 }
 
 .row {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .row:last-child {
@@ -137,8 +137,8 @@ body {
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 350px;
-	height: 745px;
+	width: 360px;
+	height: 790px;
 	background: #555;
 	border-radius: 10px 10px 30px 30px;
 	box-shadow: inset 0 0 10px #000000;
@@ -148,8 +148,8 @@ body {
 	overflow: auto;
 	margin: auto;
 	margin-top: 10px;
-	width: 320px;
-	height: 230px;
+	width: 330px;
+	height: 240px;
 	background: #333;
 	color: #fff;
 	border: 2px solid #000;
@@ -179,8 +179,8 @@ body {
 
 #screen {
 	margin: auto;
-	width: 270px;
-	height: 170px;
+	width: 290px;
+	height: 180px;
 	padding-left: 10px;
 	background: #caf79e;
 	color: #214989;
@@ -220,10 +220,15 @@ body {
 	background: #5CE;
 }
 
+#arrows {
+	position: absolute;
+	z-index: 1;
+}
+
 #up-bg {
 	position: relative;
-	left: 0px;
-	top: -28px;
+	left: 35px;
+	top: -27px;
 }
 
 #up {
@@ -234,7 +239,7 @@ body {
 
 #down-bg {
 	position: relative;
-	left: 0px;
+	left: 35px;
 	top: 20px;
 }
 
@@ -246,8 +251,8 @@ body {
 
 #left-bg {
 	position: relative;
-	left: -40px;
-	top: -58px;
+	left: -10px;
+	top: -56px;
 	width: 28px;
 	height: 50px;
 }
@@ -262,8 +267,8 @@ body {
 
 #right-bg {
 	position: relative;
-	left: 40px;
-	top: -108px;
+	left: 80px;
+	top: -106px;
 	width: 28px;
 	height: 50px;
 }
