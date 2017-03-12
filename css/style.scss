@@ -1,21 +1,34 @@
+/*--Variables--*/
 
 $bg-img: url("../img/wood.jpg");
+
 $calc-background: #555;
+
 $button-bg-background: #000;
 $button-border-radius: 2px;
 $button-fg-background: #333;
+
+$brand-color: #fa0;
 $button-text-color: #fff;
 $button-text-size: 70%;
+
 $num-key-color: #777;
 $operator-key-color: #568;
-$screen-border-background: #333;
-$brand-color: #fff;
-$screen-background: #caf79e;
-$screen-text-size: 20px;
-$screen-text-color: #003956;
 $second-key-color: #5CE;
+
+$screen-border-background: #333;
+$screen-background: #caf79e;
+$screen-text-color: #003956;
+$screen-text-size: 20px;
+
 $angle-background: #222;
 
+
+/*--Mixins--*/
+@mixin transform($transformation: none) {
+	transform: $transformation;
+	-webkit-transform: $transformation;
+}
 
 @mixin user-select($selectable: none) {
 	-webkit-touch-callout: $selectable;
@@ -26,9 +39,7 @@ $angle-background: #222;
 	user-select: $selectable;
 }
 
-/*------------------------------*\
-    Grid System
-\*------------------------------*/
+/*--Grid System--*/
 
 .row, 
 .column {
@@ -76,12 +87,12 @@ $angle-background: #222;
     margin-left: 0;
 }
 
+/*--Style--*/
+
 body {
 	background-image: $bg-img;
 	background-size: cover;
 }
-
-
 
 .column {
     padding: 5px;
@@ -121,6 +132,7 @@ body {
 	}
 	&:active {
 		box-shadow: inset 0 0 6px #000000;
+
 	}
 	@include user-select();
 
@@ -137,6 +149,9 @@ body {
 
 .button-txt {
 	font-size: $button-text-size;
+	&:active {
+		color: darken($button-text-color,20%)
+	}
 }
 
 .num-key {
@@ -150,7 +165,7 @@ body {
 .arrow-lr-key {
 	position: absolute;
 	top: 50%;
-	transform: translate(0, -50%);
+	@include transform(translate(0, -50%));
 }
 
 #calc {

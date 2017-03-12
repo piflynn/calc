@@ -1,6 +1,6 @@
-/*------------------------------*\
-    Grid System
-\*------------------------------*/
+/*--Variables--*/
+/*--Mixins--*/
+/*--Grid System--*/
 .row,
 .column {
   box-sizing: border-box; }
@@ -37,6 +37,7 @@
   width: 100%;
   margin-left: 0; }
 
+/*--Style--*/
 body {
   background-image: url("../img/wood.jpg");
   background-size: cover; }
@@ -87,6 +88,8 @@ body {
 
 .button-txt {
   font-size: 70%; }
+  .button-txt:active {
+    color: #cccccc; }
 
 .num-key {
   background: #777; }
@@ -97,7 +100,8 @@ body {
 .arrow-lr-key {
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%); }
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%); }
 
 #calc {
   overflow: auto;
@@ -113,7 +117,7 @@ body {
 #brand {
   padding-left: 20px;
   padding-top: 10px;
-  color: #fff; }
+  color: #fa0; }
 
 #model {
   float: right;
