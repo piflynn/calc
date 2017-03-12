@@ -1,0 +1,319 @@
+
+$bg-img: url("../img/wood.jpg");
+$calc-background: #555;
+$button-bg-background: #000;
+$button-border-radius: 2px;
+$button-fg-background: #333;
+$button-text-color: #fff;
+$button-text-size: 70%;
+$num-key-color: #777;
+$operator-key-color: #568;
+$screen-border-background: #333;
+$brand-color: #fff;
+$screen-background: #caf79e;
+$screen-text-size: 20px;
+$screen-text-color: #003956;
+$second-key-color: #5CE;
+$angle-background: #222;
+
+
+@mixin user-select($selectable: none) {
+	-webkit-touch-callout: $selectable;
+	-webkit-user-select: $selectable;
+	-khtml-user-select: $selectable;
+	-moz-user-select: $selectable;
+	-ms-user-select: $selectable;
+	user-select: $selectable;
+}
+
+/*------------------------------*\
+    Grid System
+\*------------------------------*/
+
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 18.72%;
+}
+
+.column-2 {
+    width: 39%;
+}
+
+.column-3 {
+    width: 59.36%;
+}
+
+.column-4 {
+    width: 79.68%;
+}
+
+.column-5 {
+    width: 100%;
+    margin-left: 0;
+}
+
+body {
+	background-image: $bg-img;
+	background-size: cover;
+}
+
+
+
+.column {
+    padding: 5px;
+    min-height: 30px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.column .column {
+}
+
+.button-bg {
+	overflow: auto;
+	margin: auto;
+	width: 50px;
+	height: 28px;
+	background: $button-bg-background;
+	border-radius: $button-border-radius;
+}
+
+.button-fg {
+	width: 46px;
+	height: 24px;
+	background: $button-fg-background;
+	color: $button-text-color;
+	border-radius: $button-border-radius;
+	box-shadow: inset 0 0 2px #000000;
+	&:hover {
+		cursor: pointer;
+	}
+	&:active {
+		box-shadow: inset 0 0 6px #000000;
+	}
+	@include user-select();
+
+}
+
+.button-graph-bg {
+	height: 22px;
+}
+
+.button-graph {
+	height: 18px;
+	font-size: 60%;
+}
+
+.button-txt {
+	font-size: $button-text-size;
+}
+
+.num-key {
+	background: $num-key-color;
+}
+
+.operator-key {
+	background: $operator-key-color;
+}
+
+.arrow-lr-key {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+#calc {
+	overflow: auto;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 360px;
+	height: 790px;
+	background: $calc-background;
+	border-radius: 10px 10px 30px 30px;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+#brand {
+	padding-left: 20px; 
+	padding-top: 10px;
+	color: $brand-color;
+}
+
+#model {
+	float: right;
+	padding-right: 20px;
+}
+
+#ti {
+	font-size: 75%;
+}
+
+#screen-border {
+	overflow: auto;
+	margin: auto;
+	margin-top: 10px;
+	width: 330px;
+	height: 240px;
+	background: $screen-border-background;
+	border: 2px solid #000;
+	border-bottom: 1px solid #000;
+	border-radius: 5px 5px 2px 2px;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+#screen {
+	margin: auto;
+	margin-top: 10px;
+	width: 285px;
+	height: 185px;
+	background: $screen-background;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+#screen-text {
+	position: absolute;
+	width: inherit;
+	padding-left: 2px;
+	z-index: 1;
+	font-size: $screen-text-size;
+	color: $screen-text-color;
+	overflow-wrap: break-word;
+}
+
+#angle {
+	margin-left: 13px;
+	margin-right: 13px;
+	height: 15px;
+	background: $angle-background;;
+	border: 3px solid #444;
+	border-top: 1px solid #444;
+	border-bottom: none;
+}
+
+#graph-buttons{
+	margin-left: 13px;
+	margin-right: 13px;
+	padding-top: 10px;
+	border: 3px solid #444;
+	border-top: none;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: inset 0 0 2px #000000;
+}
+
+#buttons {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 30px;
+}
+
+#enter-bg {
+ 	height: 36px;
+}
+
+#enter {
+	height: 32px; 
+}
+
+#window {
+	font-size: 50%;
+}
+
+#second-key {
+	background: $second-key-color;
+}
+
+#arrows {
+	position: absolute;
+	#up-bg {
+		position: relative;
+		left: 35px;
+		top: -27px;
+		#up {
+			position: relative;
+			background: #568;
+			text-align: center;
+		}
+	}
+
+
+
+	#down-bg {
+		position: relative;
+		left: 35px;
+		top: 20px;
+		#down {
+			position: relative;
+			background: #568;
+			text-align: center;
+			z-index: 1;
+		}
+	}
+
+
+
+	#left-bg {
+		position: relative;
+		left: -10px;
+		top: -56px;
+		width: 28px;
+		height: 50px;
+		#left {
+			position: relative;
+			width: 24px;
+			height: 46px;
+			background: #568;
+			text-align: center;
+		}
+	}
+
+
+
+	#right-bg {
+		position: relative;
+		left: 80px;
+		top: -106px;
+		width: 28px;
+		height: 50px;
+		#right {
+			position: relative;
+			width: 24px;
+			height: 46px;
+			background: #568;
+			text-align: center;
+		}
+	}
+
+}
+
