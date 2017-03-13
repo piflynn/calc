@@ -93,7 +93,7 @@ $(document).ready(function() {
 		var text = updateInput('clear');
 		$("#screen-text").text(text);
 	});
-	$("#enter").click(function() {
+	$("#enter-key").click(function() {
 		$("#screen-text").text(eval($("#screen-text").text()));
 	});
 

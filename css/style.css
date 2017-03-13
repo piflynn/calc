@@ -59,14 +59,14 @@ body {
   width: 50px;
   height: 28px;
   background: #000;
-  border-radius: 2px; }
+  border-radius: 3px; }
 
 .button-fg {
   width: 46px;
   height: 24px;
   background: #333;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: inset 0 0 2px #000000;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -156,7 +156,7 @@ body {
   overflow-wrap: break-word; }
 
 #angle {
-  margin-left: 13px;
+  margin-left: 12px;
   margin-right: 13px;
   height: 15px;
   background: #222;
@@ -165,7 +165,7 @@ body {
   border-bottom: none; }
 
 #graph-buttons {
-  margin-left: 13px;
+  margin-left: 12px;
   margin-right: 13px;
   padding-top: 10px;
   border: 3px solid #444;
@@ -181,10 +181,10 @@ body {
 #enter-bg {
   height: 36px; }
 
-#enter {
+#enter-key {
   height: 32px; }
 
-#window {
+#window-key {
   font-size: 50%; }
 
 #second-key {
@@ -192,46 +192,46 @@ body {
 
 #arrows {
   position: absolute; }
+  #arrows #up, #arrows #down, #arrows #left, #arrows #right {
+    position: relative;
+    z-index: 1;
+    background: #568;
+    text-align: center; }
+  #arrows #left, #arrows #right {
+    width: 24px;
+    height: 46px; }
   #arrows #up-bg {
     position: relative;
     left: 35px;
     top: -27px; }
-    #arrows #up-bg #up {
-      position: relative;
-      background: #568;
-      text-align: center; }
   #arrows #down-bg {
     position: relative;
     left: 35px;
     top: 20px; }
-    #arrows #down-bg #down {
-      position: relative;
-      background: #568;
-      text-align: center;
-      z-index: 1; }
   #arrows #left-bg {
     position: relative;
     left: -10px;
     top: -56px;
     width: 28px;
     height: 50px; }
-    #arrows #left-bg #left {
-      position: relative;
-      width: 24px;
-      height: 46px;
-      background: #568;
-      text-align: center; }
   #arrows #right-bg {
     position: relative;
     left: 80px;
     top: -106px;
     width: 28px;
     height: 50px; }
-    #arrows #right-bg #right {
-      position: relative;
-      width: 24px;
-      height: 46px;
-      background: #568;
-      text-align: center; }
+
+#on-bar-bg {
+  position: absolute; }
+  #on-bar-bg #on-bar {
+    position: relative;
+    left: -4px;
+    z-index: 1;
+    margin-top: 2px;
+    width: 56px;
+    height: 5px;
+    background: #555;
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px #000000; }
 
 /*# sourceMappingURL=style.css.map */

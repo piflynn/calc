@@ -5,8 +5,13 @@ $bg-img: url("../img/wood.jpg");
 $calc-background: #555;
 
 $button-bg-background: #000;
-$button-border-radius: 2px;
+$button-border-radius: 3px;
+$button-bg-width: 50px;
+$button-bg-height: 28px;
+$button-fg-width: 46px;
+$button-fg-height: 24px;
 $button-fg-background: #333;
+
 
 $brand-color: #fa0;
 $button-text-color: #fff;
@@ -114,15 +119,15 @@ body {
 .button-bg {
 	overflow: auto;
 	margin: auto;
-	width: 50px;
-	height: 28px;
+	width: $button-bg-width;
+	height: $button-bg-height;
 	background: $button-bg-background;
 	border-radius: $button-border-radius;
 }
 
 .button-fg {
-	width: 46px;
-	height: 24px;
+	width: $button-fg-width;
+	height: $button-fg-height;
 	background: $button-fg-background;
 	color: $button-text-color;
 	border-radius: $button-border-radius;
@@ -228,7 +233,7 @@ body {
 }
 
 #angle {
-	margin-left: 13px;
+	margin-left: 12px;
 	margin-right: 13px;
 	height: 15px;
 	background: $angle-background;;
@@ -238,7 +243,7 @@ body {
 }
 
 #graph-buttons{
-	margin-left: 13px;
+	margin-left: 12px;
 	margin-right: 13px;
 	padding-top: 10px;
 	border: 3px solid #444;
@@ -257,11 +262,11 @@ body {
  	height: 36px;
 }
 
-#enter {
+#enter-key {
 	height: 32px; 
 }
 
-#window {
+#window-key {
 	font-size: 50%;
 }
 
@@ -271,49 +276,38 @@ body {
 
 #arrows {
 	position: absolute;
+
+	#up, #down, #left, #right {
+		position: relative;
+		z-index: 1;
+		background: $operator-key-color;
+		text-align: center;
+	}
+
+	#left, #right {
+		width: $button-fg-height;
+		height: $button-fg-width;
+	}
+
 	#up-bg {
 		position: relative;
 		left: 35px;
 		top: -27px;
-		#up {
-			position: relative;
-			background: #568;
-			text-align: center;
-		}
 	}
-
-
 
 	#down-bg {
 		position: relative;
 		left: 35px;
 		top: 20px;
-		#down {
-			position: relative;
-			background: #568;
-			text-align: center;
-			z-index: 1;
-		}
 	}
-
-
 
 	#left-bg {
 		position: relative;
 		left: -10px;
 		top: -56px;
-		width: 28px;
-		height: 50px;
-		#left {
-			position: relative;
-			width: 24px;
-			height: 46px;
-			background: #568;
-			text-align: center;
-		}
+		width: $button-bg-height;
+		height: $button-bg-width;
 	}
-
-
 
 	#right-bg {
 		position: relative;
@@ -321,14 +315,22 @@ body {
 		top: -106px;
 		width: 28px;
 		height: 50px;
-		#right {
-			position: relative;
-			width: 24px;
-			height: 46px;
-			background: #568;
-			text-align: center;
-		}
 	}
 
+}
+
+#on-bar-bg{
+	position: absolute;
+	#on-bar {
+		position: relative;
+		left: -4px;
+		z-index: 1;
+		margin-top: 2px;
+		width: 56px;
+		height: 5px;
+		background: $calc-background;
+		border-radius: 2px;
+		box-shadow: inset 0 0 2px #000000;
+	}
 }
 
