@@ -3,30 +3,51 @@
 $bg-img: url("../img/wood.jpg");
 
 $calc-background: #555;
-
 $button-bg-background: #000;
+$button-fg-background: #333;
+$screen-border-background: #333;
+$screen-background: #caf79e;
+$angle-background: #222;
+
 $button-border-radius: 3px;
+
+$calc-width: 360px;
+$calc-height: 790px;
+$screen-border-width: 330px;
+$screen-border-height: 240px;
+$screen-width: 285px;
+$screen-height: 185px;
+$angle-width: 330px;
+$angle-height: 15px;
+$graph-buttons-width: 336px;
+
 $button-bg-width: 50px;
 $button-bg-height: 28px;
 $button-fg-width: 46px;
 $button-fg-height: 24px;
-$button-fg-background: #333;
+$button-graph-bg-height: 22px;
+$button-graph-height: 18px;
+
+$enter-bg-height: 36px;
+$enter-key-height: 32px;
+$on-bar-width: 56px;
+$on-bar-height: 5px;
+
 
 
 $brand-color: #fa0;
 $button-text-color: #fff;
-$button-text-size: 70%;
+$screen-text-color: #003956;
 
 $num-key-color: #777;
 $operator-key-color: #568;
-$second-key-color: #5CE;
+$second-key-color: #5ce;
 
-$screen-border-background: #333;
-$screen-background: #caf79e;
-$screen-text-color: #003956;
+$ti-text-size: 75%;
 $screen-text-size: 20px;
-
-$angle-background: #222;
+$button-text-size: 70%;
+$button-graph-text-size: 60%;
+$window-key-text-size: 50%;
 
 
 /*--Mixins--*/
@@ -144,12 +165,12 @@ body {
 }
 
 .button-graph-bg {
-	height: 22px;
+	height: $button-graph-bg-height;
 }
 
 .button-graph {
-	height: 18px;
-	font-size: 60%;
+	height: $button-graph-height;
+	font-size: $button-graph-text-size;
 }
 
 .button-txt {
@@ -178,8 +199,8 @@ body {
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 360px;
-	height: 790px;
+	width: $calc-width;
+	height: $calc-height;
 	background: $calc-background;
 	border-radius: 10px 10px 30px 30px;
 	box-shadow: inset 0 0 10px #000000;
@@ -197,15 +218,15 @@ body {
 }
 
 #ti {
-	font-size: 75%;
+	font-size: $ti-text-size;
 }
 
 #screen-border {
 	overflow: auto;
 	margin: auto;
 	margin-top: 10px;
-	width: 330px;
-	height: 240px;
+	width: $screen-border-width;
+	height: $screen-border-height;
 	background: $screen-border-background;
 	border: 2px solid #000;
 	border-bottom: 1px solid #000;
@@ -216,8 +237,8 @@ body {
 #screen {
 	margin: auto;
 	margin-top: 10px;
-	width: 285px;
-	height: 185px;
+	width: $screen-width;
+	height: $screen-height;
 	background: $screen-background;
 	box-shadow: inset 0 0 10px #000000;
 }
@@ -233,9 +254,9 @@ body {
 }
 
 #angle {
-	margin-left: 12px;
-	margin-right: 13px;
-	height: 15px;
+	margin: auto;
+	width: $angle-width;
+	height: $angle-height;
 	background: $angle-background;;
 	border: 3px solid #444;
 	border-top: 1px solid #444;
@@ -243,8 +264,8 @@ body {
 }
 
 #graph-buttons{
-	margin-left: 12px;
-	margin-right: 13px;
+	margin: auto;
+	width: $graph-buttons-width;
 	padding-top: 10px;
 	border: 3px solid #444;
 	border-top: none;
@@ -259,15 +280,15 @@ body {
 }
 
 #enter-bg {
- 	height: 36px;
+ 	height: $enter-bg-height;
 }
 
 #enter-key {
-	height: 32px; 
+	height: $enter-key-height; 
 }
 
 #window-key {
-	font-size: 50%;
+	font-size: $window-key-text-size;
 }
 
 #second-key {
@@ -282,6 +303,11 @@ body {
 		z-index: 1;
 		background: $operator-key-color;
 		text-align: center;
+	}
+
+	#left-bg, #right-bg {
+		width: $button-bg-height;
+		height: $button-bg-width;
 	}
 
 	#left, #right {
@@ -305,16 +331,12 @@ body {
 		position: relative;
 		left: -10px;
 		top: -56px;
-		width: $button-bg-height;
-		height: $button-bg-width;
 	}
 
 	#right-bg {
 		position: relative;
 		left: 80px;
 		top: -106px;
-		width: 28px;
-		height: 50px;
 	}
 
 }
@@ -326,8 +348,8 @@ body {
 		left: -4px;
 		z-index: 1;
 		margin-top: 2px;
-		width: 56px;
-		height: 5px;
+		width: $on-bar-width;
+		height: $on-bar-height;
 		background: $calc-background;
 		border-radius: 2px;
 		box-shadow: inset 0 0 2px #000000;

@@ -156,8 +156,8 @@ body {
   overflow-wrap: break-word; }
 
 #angle {
-  margin-left: 12px;
-  margin-right: 13px;
+  margin: auto;
+  width: 330px;
   height: 15px;
   background: #222;
   border: 3px solid #444;
@@ -165,8 +165,8 @@ body {
   border-bottom: none; }
 
 #graph-buttons {
-  margin-left: 12px;
-  margin-right: 13px;
+  margin: auto;
+  width: 336px;
   padding-top: 10px;
   border: 3px solid #444;
   border-top: none;
@@ -188,7 +188,7 @@ body {
   font-size: 50%; }
 
 #second-key {
-  background: #5CE; }
+  background: #5ce; }
 
 #arrows {
   position: absolute; }
@@ -197,6 +197,9 @@ body {
     z-index: 1;
     background: #568;
     text-align: center; }
+  #arrows #left-bg, #arrows #right-bg {
+    width: 28px;
+    height: 50px; }
   #arrows #left, #arrows #right {
     width: 24px;
     height: 46px; }
@@ -211,15 +214,11 @@ body {
   #arrows #left-bg {
     position: relative;
     left: -10px;
-    top: -56px;
-    width: 28px;
-    height: 50px; }
+    top: -56px; }
   #arrows #right-bg {
     position: relative;
     left: 80px;
-    top: -106px;
-    width: 28px;
-    height: 50px; }
+    top: -106px; }
 
 #on-bar-bg {
   position: absolute; }
