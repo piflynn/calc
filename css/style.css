@@ -1,5 +1,3 @@
-/*--Variables--*/
-/*--Mixins--*/
 /*--Grid System--*/
 .row,
 .column {
@@ -37,6 +35,8 @@
   width: 100%;
   margin-left: 0; }
 
+/*--Variables--*/
+/*--Mixins--*/
 /*--Style--*/
 body {
   background-image: url("../img/wood.jpg");
